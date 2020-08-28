@@ -57,7 +57,7 @@ class MyWindow(Tk):
 		return fianl_string
 
 	def getWeather(self, city):
-		weather_key = "304e20c8a7f09ac8904537dbc9fabec7"
+		weather_key = "[ENTER API KEY HERE]"
 		url = "https://api.openweathermap.org/data/2.5/weather"
 		params = {"APPID":weather_key, "q":city, "units":"metric"}
 		response = requests.get(url, params).json()
